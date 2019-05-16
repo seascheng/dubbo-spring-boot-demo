@@ -11,16 +11,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DubboSpringBootDemoConsumerApplicationTests {
 
-    @Reference
-    private DemoService demoService;
+//    @Reference
+//    private DemoService demoService;
 
     @Test
     public void contextLoads() {
     }
 
-    @Test
-    public void dubboTest(){
-        System.out.println(demoService.welcome("springboot with dubbo and zookeeper"));
-    }
+//    @Test
+//    public void dubboTest(){
+//        System.out.println(demoService.welcome("springboot with dubbo and zookeeper"));
+//    }
 
 }
