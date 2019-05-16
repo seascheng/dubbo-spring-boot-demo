@@ -12,7 +12,9 @@
 
       `EXPOSE 2181 2888 3888` (the zookeeper client port, follower port, election port respectively)
 
-   3. consumer和provider包含zookeeper client框架：
+   
+
+2. consumer和provider包含zookeeper client框架：
 
       ```xml
       <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
@@ -41,14 +43,14 @@
       Curator 3.x.x - compatible only with ZooKeeper 3.5.x and includes support for new features such as dynamic reconfiguration, etc.
       ```
 
-   4. jar包运行
+3. jar包运行
 
       ```shell
       /dubbo-spring-boot-demo > mvn clean package -X
       dubbo-spring-boot-demo/dubbo-spring-boot-demo-provider/target > java -jar dubbo-spring-boot-demo-provider-0.0.1-SNAPSHOT.jar
       ```
 
-   5. Dubbo admin的安装：
+4. Dubbo admin的安装：
 
       [代码](https://github.com/apache/incubator-dubbo-admin)
 
@@ -62,6 +64,6 @@
       </dependency>
       ```
 
-   6. 当前dubb版本为2.7.1，但Dubbo admin已经使用了2.7.2，mvn repository尚未更新
+5. 当前dubb版本为2.7.1，但Dubbo admin已经使用了2.7.2，mvn repository尚未更新
 
       等待更新。
